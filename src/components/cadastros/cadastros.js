@@ -88,8 +88,8 @@ class Cadastro extends Component {
     mySubmitHandler_orgao = (event) => {
         event.preventDefault();
         alert("Criar órgao :  " + this.state.orgao_input);
-
-        axios.post("/orgao", { nome: this.state.orgao_input })
+        
+        axios.post("https://xtema.herokuapp.com/orgao", { nome: this.state.orgao_input })
             .then((response) => {
                 console.log("Data submitted successfully");
                 console.log(this.state.orgao_input);

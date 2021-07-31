@@ -102,7 +102,7 @@ class Cadastro extends Component {
         console.log(this.selectValue_orgao)
         event.preventDefault();
 
-        axios.post("/anexo", {orgao :this.state.selectValue_orgao,suborgao : this.state.selectValue_sub, processo: this.state.selectValue_proc  })
+        axios.post("https://xtema.herokuapp.com/anexo", {orgao :this.state.selectValue_orgao,suborgao : this.state.selectValue_sub, processo: this.state.selectValue_proc  })
             .then((response) => {
                 console.log("Data submitted successfully");
                 console.log(this.state.orgao_input);
@@ -122,7 +122,7 @@ class Cadastro extends Component {
         event.preventDefault();
         alert("Criar Pasta :  " + this.state.suborgao_input);
 
-        axios.post("/SubOrgao", { nome: this.state.suborgao_input, orgao: this.state.selectValue_orgao })
+        axios.post("https://xtema.herokuapp.com/SubOrgao", { nome: this.state.suborgao_input, orgao: this.state.selectValue_orgao })
             .then((response) => {
                 console.log(this.state.selectValue_orgao)
                 console.log("Data submitted successfully");
@@ -170,7 +170,7 @@ class Cadastro extends Component {
         event.preventDefault();
         alert("Criar processo :  " + this.state.processo_input);
 
-        axios.post("/processo", { nome: this.state.processo_input, orgao: this.state.selectValue_orgao, suborgao: this.state.selectValue_sub })
+        axios.post("https://xtema.herokuapp.com/processo", { nome: this.state.processo_input, orgao: this.state.selectValue_orgao, suborgao: this.state.selectValue_sub })
             .then((response) => {
                 console.log("Data submitted successfully");
                 console.log(this.state.selectValue_orgao)

@@ -1,0 +1,33 @@
+select{
+    margin-left: 20px;
+    background-color: rgb(197, 197, 197);
+}
+
+.campos{
+    display: inline-block;
+    margin-left: 10px;
+    
+}
+
+.anexxos {
+    font-family:'Times New Roman', Times, serif;
+    margin-top: 10px;
+    margin-left: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: rgb(197, 197, 197);
+
+
+    
+
+}
+.anexxos p {
+    margin-left: 10px;
+    width: auto;
+    max-width: 125px;
+
+    
+}
+

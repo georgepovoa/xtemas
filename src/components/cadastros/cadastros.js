@@ -159,7 +159,7 @@ class Cadastro extends Component {
         const data = new FormData() 
         data.append('file', this.state.selectedFile)
         data.append('body', [this.state.selectValue_orgao,this.state.selectValue_sub,this.state.selectValue_proc,form_tags ])
-        axios.post("http://localhost:5000/upload", data, { // receive two parameter endpoint url ,form data 
+        axios.post("https://xtema.herokuapp.com/upload", data, { // receive two parameter endpoint url ,form data 
     })
     .then(res => { // then print response status
       console.log(res.statusText)

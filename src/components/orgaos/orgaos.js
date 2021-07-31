@@ -66,23 +66,23 @@ class Orgaos extends Component {
     }
 
     componentDidMount() {
-        fetch("/api/orgaos")
+        fetch("https://xtema.herokuapp.com/api/orgaos")
             .then(res => res.json())
             .then(orgaos => this.setState({ orgaos }, () => console.log("Orgãos fetched...", orgaos)))
 
-        fetch("/api/sub_orgao")
+        fetch("https://xtema.herokuapp.com/api/sub_orgao")
             .then(res => res.json())
             .then(sub_orgaos => this.setState({ sub_orgaos }, () => console.log("subs fetched...", sub_orgaos)))
 
-        fetch("/api/processo")
+        fetch("https://xtema.herokuapp.com/api/processo")
             .then(res => res.json())
             .then(processos => this.setState({ processos }, () => console.log("Processos fetched...", processos)))
 
-        fetch("/api/anexos")
+        fetch("https://xtema.herokuapp.com/api/anexos")
             .then(res => res.json())
             .then(anexos => this.setState({ anexos }, () => console.log("anexos fetched...", anexos)))
 
-        fetch("/api/pdfs")
+        fetch("https://xtema.herokuapp.com/api/pdfs")
             .then(res => res.json())
             .then(pdfs => this.setState({ pdfs }, () => console.log("pdfs fetched...", pdfs)))
     }

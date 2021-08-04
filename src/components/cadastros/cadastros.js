@@ -104,6 +104,7 @@ class Cadastro extends Component {
 
         axios.post("https://xtema.herokuapp.com/anexo", {orgao :this.state.selectValue_orgao,suborgao : this.state.selectValue_sub, processo: this.state.selectValue_proc  })
             .then((response) => {
+                
                 console.log("Data submitted successfully");
                 console.log(this.state.orgao_input);
             }).catch((error) => {
@@ -115,7 +116,7 @@ class Cadastro extends Component {
 
     myChangeHandler = (event) => {
         this.setState({ orgao_input: event.target.value });
-        this.blur()
+        
     }
 
     mySubmitHandler_suborgao = (event) => {
@@ -139,6 +140,10 @@ class Cadastro extends Component {
 
     myChangeHandler_processo = (event) => {
         this.setState({ processo_input: event.target.value });
+    }
+
+    myChangeHandler_subpasta = (event) => {
+        this.setState({ suborgao_input: event.target.value });
     }
     onChangeHandler_anexo=event=>{
 

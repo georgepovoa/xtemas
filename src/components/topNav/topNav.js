@@ -1,6 +1,12 @@
 import React,{Component} from 'react'
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Link
+} from "react-router-dom";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -12,7 +18,7 @@ class Nav extends Component{
             <div>
 <Navbar bg="light" expand="lg">
   <Container>
-    <Navbar.Brand href="#home">Gatão</Navbar.Brand>
+    <Navbar.Brand href="/cadastro">Cadastrar</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
   </Container>
 </Navbar>

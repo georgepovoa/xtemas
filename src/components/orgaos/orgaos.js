@@ -3,7 +3,8 @@ import './orgaos.css';
 import {
     BrowserRouter as Router,
     Route,
-    Switch
+    Switch,
+    Link
 } from "react-router-dom";
 import { Document } from 'react-pdf'
 import Cadastro from '../cadastros/cadastros';
@@ -199,16 +200,7 @@ class Orgaos extends Component {
                                                     </a> */}
 
                                                     <div>
-                                                        <Document
-                                                            file={anexo.pathing}
-                                                        >
-
-                                                        </Document>
-
-                                                    </div>
-
-                                                    <div>
-                                                        <a href ={anexo.pathing}>{anexo.nome}</a>
+                                                        <a href ={anexo.pathing} target="_blank" >{anexo.nome}</a>
                                                     </div>
 
 

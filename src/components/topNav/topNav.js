@@ -1,4 +1,4 @@
-import React,{Component} from 'react'
+import React, { Component } from 'react'
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import {
@@ -12,30 +12,105 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
-class Nav extends Component{
-    render(){
-        return(
-            <div>
-<Navbar bg="light" expand="lg">
-  <Container>
-    <Navbar.Brand href="/cadastro">Cadastrar</Navbar.Brand>
-    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-  </Container>
-</Navbar>
+class Nav extends Component {
+  render() {
+    return (
+      <div>
 
-<script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>
 
-<script
-  src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"
-  crossorigin></script>
+<div class="area"></div><nav class="main-menu">
+            <ul>
+                <li>
+                    <a href="http://justinfarrow.com">
+                        <i class="fa fa-home fa-2x"></i>
+                        <span class="nav-text">
+                            Dashboard
+                        </span>
+                    </a>
+                  
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                        <i class="fa fa-laptop fa-2x"></i>
+                        <span class="nav-text">
+                            Stars Components
+                        </span>
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                       <i class="fa fa-list fa-2x"></i>
+                        <span class="nav-text">
+                            Forms
+                        </span>
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                       <i class="fa fa-folder-open fa-2x"></i>
+                        <span class="nav-text">
+                            Pages
+                        </span>
+                    </a>
+                   
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-bar-chart-o fa-2x"></i>
+                        <span class="nav-text">
+                            Graphs and Statistics
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-font fa-2x"></i>
+                        <span class="nav-text">
+                           Quotes
+                        </span>
+                    </a>
+                </li>
+                <li>
+                   <a href="#">
+                       <i class="fa fa-table fa-2x"></i>
+                        <span class="nav-text">
+                            Tables
+                        </span>
+                    </a>
+                </li>
+                <li>
+                   <a href="#">
+                        <i class="fa fa-map-marker fa-2x"></i>
+                        <span class="nav-text">
+                            Maps
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                       <i class="fa fa-info fa-2x"></i>
+                        <span class="nav-text">
+                            Documentation
+                        </span>
+                    </a>
+                </li>
+            </ul>
 
-<script
-  src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
-  crossorigin></script>
-
-<script>var Alert = ReactBootstrap.Alert;</script>
-</div>
-        )
+            <ul class="logout">
+                <li>
+                   <a href="#">
+                         <i class="fa fa-power-off fa-2x"></i>
+                        <span class="nav-text">
+                            Logout
+                        </span>
+                    </a>
+                </li>  
+            </ul>
+        </nav>
+        </div>
+              )
 }
 }
-export default Nav;
+              export default Nav;

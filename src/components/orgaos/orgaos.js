@@ -188,7 +188,7 @@ class Orgaos extends Component {
                                             const palavra_chave = this.state.tag
                                             //const trueorfalse = palavasChave.include(palavra_chave)
 
-                                            if (anexo.processo === this.state.selectValue_proc && palavasChave.includes(palavra_chave))
+                                            if (anexo.processo === this.state.selectValue_proc && (palavasChave.includes(palavra_chave) || palavra_chave == '') )
                                                 //anexo.orgao == this.state.selectValue_orgao)
                                                 return <div className="anexxos">
                                                     <p>{this.state.selectValue_orgao}</p>

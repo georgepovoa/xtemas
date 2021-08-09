@@ -1,57 +1,38 @@
-import React,{Component} from 'react'
-import SideNav, { Toggle, Nav, NavItem, NavIcon, NavText } from '@trendmicro/react-sidenav';
+import React, { Component } from 'react'
+import './sideBar.css';
+import {
+    BrowserRouter as Router,
+    Route,
+    Switch,
+    Link
+} from "react-router-dom";
 
 
 
-// Be sure to include styles at some point, probably during your bootstraping
-import '@trendmicro/react-sidenav/dist/react-sidenav.css';
+class sideBar extends Component {
+    render() {
+        return (
+            <div>
+                <nav className="menu" tabindex="0">
+                    <div className="smartphone-menu-trigger"></div>
+                    <header className="avatar">
+                        <img src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg" />
+                        <h2>John D.</h2>
+                    </header>
+                    <ul>
+                        <li tabindex="0" className="icon-dashboard"><span>Dashboard</span></li>
+                        <li tabindex="0" className="icon-customers"><span>Customers</span></li>
+                        <li tabindex="0" className="icon-users"><span>Users</span></li>
+                        <li tabindex="0" className="icon-settings"><span>Settings</span></li>
+                    </ul>
+                </nav>
 
-
-
-// Add all icons to the library so you can use it in your page
-
-class SideBar extends Component{
-    render(){
-        return(
-            
-            
-<SideNav
-    onSelect={(selected) => {
-        
-    }}
->
-    
-    <SideNav.Toggle />
-    <SideNav.Nav defaultSelected="home">
-        <NavItem eventKey="home">
-            <NavIcon>
-                <i className="fa fa-fw fa-home" style={{ fontSize: '1.75em' }} />
-            </NavIcon>
-            <NavText>
-                Home
-            </NavText>
-        </NavItem>
-        <NavItem eventKey="charts">
-            <NavIcon>
-                <i className="fa fa-fw fa-line-chart" style={{ fontSize: '1.75em' }} />
-            </NavIcon>
-            <NavText>
-                Charts
-            </NavText>
-            <NavItem eventKey="charts/linechart">
-                <NavText>
-                    Line Chart
-                </NavText>
-            </NavItem>
-            <NavItem eventKey="charts/barchart">
-                <NavText>
-                    Bar Chart
-                </NavText>
-            </NavItem>
-        </NavItem>
-    </SideNav.Nav>
-</SideNav>
+            </div>
         )
+    }
+
+
 }
-}
-export default SideBar;
+
+
+export default sideBar;

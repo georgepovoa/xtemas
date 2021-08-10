@@ -20,10 +20,10 @@ class sideBar extends Component {
                         <h2>John D.</h2>
                     </header>
                     <ul>
-                        <li tabindex="0" className="icon-dashboard"><span>Dashboard</span></li>
-                        <li tabindex="0" className="icon-customers"><span>Customers</span></li>
-                        <li tabindex="0" className="icon-users"><span>Users</span></li>
-                        <li tabindex="0" className="icon-settings"><span>Settings</span></li>
+                        <li tabindex="0" className="icon-dashboard"><span>Consulta</span></li>
+                        <li tabindex="0" className="icon-customers"><span>Cadastros</span></li>
+                        <li tabindex="0" className="icon-users"><span>-</span></li>
+                        <li tabindex="0" className="icon-settings"><span>-</span></li>
                     </ul>
                 </nav>
 

@@ -21,19 +21,19 @@ class Nav extends Component {
 <div class="area"></div><nav class="main-menu">
             <ul>
                 <li>
-                    <a href="http://justinfarrow.com">
+                    <a href="https://xstemas.herokuapp.com">
                         <i class="fa fa-home fa-2x"></i>
                         <span class="nav-text">
-                            Dashboard
+                            Consulta
                         </span>
                     </a>
                   
                 </li>
                 <li class="has-subnav">
-                    <a href="#">
+                    <a href="https://xstemas.herokuapp.com/cadastro">
                         <i class="fa fa-laptop fa-2x"></i>
                         <span class="nav-text">
-                            Stars Components
+                            Cadastro
                         </span>
                     </a>
                     
@@ -42,7 +42,7 @@ class Nav extends Component {
                     <a href="#">
                        <i class="fa fa-list fa-2x"></i>
                         <span class="nav-text">
-                            Forms
+                            -
                         </span>
                     </a>
                     
@@ -51,7 +51,7 @@ class Nav extends Component {
                     <a href="#">
                        <i class="fa fa-folder-open fa-2x"></i>
                         <span class="nav-text">
-                            Pages
+                            -
                         </span>
                     </a>
                    
@@ -60,7 +60,7 @@ class Nav extends Component {
                     <a href="#">
                         <i class="fa fa-bar-chart-o fa-2x"></i>
                         <span class="nav-text">
-                            Graphs and Statistics
+                            -
                         </span>
                     </a>
                 </li>
@@ -68,7 +68,7 @@ class Nav extends Component {
                     <a href="#">
                         <i class="fa fa-font fa-2x"></i>
                         <span class="nav-text">
-                           Quotes
+                           -
                         </span>
                     </a>
                 </li>
@@ -76,7 +76,7 @@ class Nav extends Component {
                    <a href="#">
                        <i class="fa fa-table fa-2x"></i>
                         <span class="nav-text">
-                            Tables
+                            -
                         </span>
                     </a>
                 </li>
@@ -84,7 +84,7 @@ class Nav extends Component {
                    <a href="#">
                         <i class="fa fa-map-marker fa-2x"></i>
                         <span class="nav-text">
-                            Maps
+                            -
                         </span>
                     </a>
                 </li>
@@ -92,7 +92,7 @@ class Nav extends Component {
                     <a href="#">
                        <i class="fa fa-info fa-2x"></i>
                         <span class="nav-text">
-                            Documentation
+                            -
                         </span>
                     </a>
                 </li>
@@ -103,7 +103,7 @@ class Nav extends Component {
                    <a href="#">
                          <i class="fa fa-power-off fa-2x"></i>
                         <span class="nav-text">
-                            Logout
+                            -
                         </span>
                     </a>
                 </li>  

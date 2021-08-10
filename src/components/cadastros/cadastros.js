@@ -364,17 +364,20 @@ class Cadastro extends Component {
                                     }
 
                                 </datalist>
+                                <br></br>
 
                                 <input
                                     type='text'
                                     onChange={this.myChangeHandler_tags}
                                     name="tags"
+                                    placeholder = "Tag1 , Tag2 , Tag3,"
+                                    
                                 />
                                 
                                 <input type="file" name="file" onChange={this.onChangeHandler_anexo}/>
 
-                                <button type="button" class="btn btn-success btn-block" onClick={this.onClickHandler_anexo}>Upload</button> 
-                                <input type="submit"/>
+                                <button type="button" class="btn btn-success btn-block" onClick={this.onClickHandler_anexo}>Enviar Anexo</button> 
+                                
                                 
                             </form>
                         </Route>

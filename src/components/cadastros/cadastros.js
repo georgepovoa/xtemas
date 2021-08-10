@@ -93,6 +93,8 @@ class Cadastro extends Component {
             .then((response) => {
                 console.log("Data submitted successfully");
                 console.log(this.state.orgao_input);
+                event.target.reset();
+
             }).catch((error) => {
                 console.log("got errr while posting data", error);
             });
@@ -107,6 +109,8 @@ class Cadastro extends Component {
                 
                 console.log("Data submitted successfully");
                 console.log(this.state.orgao_input);
+                event.target.reset();
+                
             }).catch((error) => {
                 console.log("got errr while posting data", error);
             });
@@ -128,6 +132,7 @@ class Cadastro extends Component {
                 console.log(this.state.selectValue_orgao)
                 console.log("Data submitted successfully");
                 console.log(this.state.suborgao_input);
+                event.target.reset();
             }).catch((error) => {
                 console.log("got errr while posting data", error);
             });
@@ -221,11 +226,11 @@ class Cadastro extends Component {
         return (
             <Router>
                 <div>
-                    <Link to="/cadastro/orgao" className="btn btn-primary">Orgao </Link>
+                    <Link to="/cadastro/orgao" className="btn btn-primary" onClick={() => window.location.href="/cadastro/orgao"}>Orgao </Link>
 
-                    <Link to="/cadastro/suborgao" className="btn btn-primary ">Pasta</Link>
-                    <Link to="/cadastro/processo" className="btn btn-primary ">Processo</Link>
-                    <Link to="/cadastro/anexo" className="btn btn-primary">Anexo</Link>
+                    <Link to="/cadastro/suborgao" className="btn btn-primary " onClick={() => window.location.href="/cadastro/suborgao"}>Pasta</Link>
+                    <Link to="/cadastro/processo" className="btn btn-primary " onClick={() => window.location.href="/cadastro/processo"}>Processo</Link>
+                    <Link to="/cadastro/anexo" className="btn btn-primary" onClick={() => window.location.href="/cadastro/anexo"}>Anexo</Link>
                     <Switch>
                         <Route exact path="/cadastro/orgao" >
                             <form onSubmit={this.mySubmitHandler_orgao}>

@@ -101,7 +101,7 @@ class Orgaos extends Component {
                                 
 
                                 <select className="ui dropdown " id="orgao" onChange={this.handleDropdownChange_orgao} defaultValue=''>
-                                    <option className = "item" key = "def" value = "      ">      </option>
+                                    <option className = "item" key = "def" value = "Órgão"> Órgão</option>
                                     {this.state.orgaos.map(orgaos =>
                                         <option className="item" key={orgaos.nome} value={orgaos.nome}> {orgaos.nome}</option>)}
                                 </select>
@@ -109,7 +109,7 @@ class Orgaos extends Component {
 
                             <div className="campos">
                                 <select className="ui dropdown" id="sub" onChange={this.handleDropdownChange_sub}>
-                                <option className = "item" key = "def" value = "      ">      </option>
+                                <option className = "item" key = "def" value = "Pasta">   Pasta   </option>
                                     {this.state.sub_orgaos.map(
                                         sub_orgaos => {
                                             console.log(sub_orgaos.orgao)
@@ -133,7 +133,7 @@ class Orgaos extends Component {
                             <div className="campos">
 
                                 <select className="ui dropdown" id="processo" onChange={this.handleDropdownChange_proc}>
-                                <option className = "item" key = "def" value = "      ">      </option>
+                                <option className = "item" key = "def" value = "Processo">  Processo    </option>
                                     {this.state.processos.map(
                                         processos => {
                                             console.log("processoprocessoprocessoprocessoprocessoprocesso")
